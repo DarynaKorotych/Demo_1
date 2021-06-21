@@ -128,21 +128,60 @@ a {
   content: "\f0d7";
 }
 
+
+
 /* ===================INDEX BLOCKS===================== */
 
-.index-blocks{
+.container {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.index-blocks {
   display: flex;
   flex-wrap: wrap;
 }
 
-.index-blocks .index-block {
-  height: 300px;
+.item{
+  position: relative;
+  height: 100%;
+  padding: 10px;
 }
 
-.index-blocks img,
-.index-blocks h2 {
-  display: block;
+
+
+.index-blocks .index-block{
+  flex-basis: 100%;
+  position: relative;
+  transition: 0.2s linear;
+}
+
+.index-blocks .index-block:hover{
+  opacity: 0.6;
+}
+
+.index-blocks .index-block.one{
   width: 100%;
+}
+
+.index-blocks .index-block.one img{
+  height: 250px;
+  object-fit: cover;
+}
+
+.index-blocks .index-block img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.index-blocks .index-block.two{
+  flex-basis: calc(50% - 2px);
+}
+
+.index-blocks a{
+position: relative;
 }
 
 .index-blocks h2 {
