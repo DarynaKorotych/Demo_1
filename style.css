@@ -12,6 +12,7 @@ html {
 
 body {
   background-color: #efefef;
+  margin: 0 auto;
 }
 
 a {
@@ -133,13 +134,15 @@ a {
 /* ===================INDEX BLOCKS===================== */
 
 .container {
-  width: 1140px;
-  padding: 0 15px;
+  padding: 0 5%;
   margin: 0 auto;
 }
 
 .index-blocks {
+  max-width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
@@ -148,8 +151,6 @@ a {
   height: 100%;
   padding: 10px;
 }
-
-
 
 .index-blocks .index-block{
   flex-basis: 100%;
@@ -170,6 +171,10 @@ a {
   object-fit: cover;
 }
 
+.index-blocks .index-block .two{
+  flex-basis: calc(50%-2px);
+}
+
 .index-blocks .index-block img{
   height: 300px;
   width: 100%;
@@ -184,7 +189,7 @@ a {
 position: relative;
 }
 
-.index-blocks h2 {
+.index-blocks .index-block h2 {
   position: absolute;
   bottom: 0;
   left: 0;
