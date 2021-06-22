@@ -75,10 +75,12 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
+  align-items: center;
 }
 
 .header_middle .phones {
   list-style: none;
+  line-height: 1.2;
 }
 
 @media (max-width: 768px) {
@@ -87,6 +89,32 @@ a {
     text-align: center;
   }
 }
+
+/* =========================HEADER SEARCH========================= */
+
+.header_middle .input_search {
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+}
+
+.fa-search::before {
+  content: "\f002";
+}
+
+.header-search form {
+  display: flex;
+}
+
+.header-search .btn {
+  margin: 0;
+  height: 30px;
+  width: 35px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #ccc;
+}
+
 
 /* ======================HEADER BOTTOM====================== */
 
@@ -129,8 +157,6 @@ a {
   content: "\f0d7";
 }
 
-
-
 /* ===================INDEX BLOCKS===================== */
 
 .container {
@@ -146,47 +172,47 @@ a {
   flex-wrap: wrap;
 }
 
-.item{
+.item {
   position: relative;
   height: 100%;
   padding: 10px;
 }
 
-.index-blocks .index-block{
+.index-blocks .index-block {
   flex-basis: 100%;
   position: relative;
   transition: 0.2s linear;
 }
 
-.index-blocks .index-block:hover{
+.index-blocks .index-block:hover {
   opacity: 0.6;
 }
 
-.index-blocks .index-block.one{
+.index-blocks .index-block.one {
   width: 100%;
 }
 
-.index-blocks .index-block.one img{
+.index-blocks .index-block.one img {
   height: 250px;
   object-fit: cover;
 }
 
-.index-blocks .index-block .two{
+.index-blocks .index-block .two {
   flex-basis: calc(50%-2px);
 }
 
-.index-blocks .index-block img{
+.index-blocks .index-block img {
   height: 300px;
   width: 100%;
   object-fit: cover;
 }
 
-.index-blocks .index-block.two{
+.index-blocks .index-block.two {
   flex-basis: calc(50% - 2px);
 }
 
-.index-blocks a{
-position: relative;
+.index-blocks a {
+  position: relative;
 }
 
 .index-blocks .index-block h2 {
