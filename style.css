@@ -19,19 +19,21 @@ a {
   color: #505050;
 }
 
-/* .container {
-  max-width: 1140px;
-  padding: 0 15px;
+.header_top,
+.header_middle,
+.container {
+  padding: 0 5%;
   margin: 0 auto;
-} */
+}
 
-.header {
+.header_top {
   display: flex;
   justify-content: center;
 }
 
 @media (max-width: 768px) {
-  .header {
+  .header_top,
+  .header-search {
     display: none;
   }
 }
@@ -58,13 +60,18 @@ a {
 
 .header_img {
   display: block;
-  max-width: 64px;
+  max-width: 100px;
+  /* max-width: 64px; */
 }
 
 /* ==================HEADER MIDDLE================ */
 
 .header_middle .header_logo {
   text-align: center;
+}
+
+.header_middle .header_logo a {
+  display: block;
 }
 
 .header_middle .call {
@@ -74,25 +81,27 @@ a {
 .header_middle {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header_middle .phones {
   list-style: none;
   line-height: 1.2;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
-  .header-middle .phones {
-    flex-basis: 50%;
-    text-align: center;
+  .header_middle {
+    flex-direction: column;
   }
 }
 
 /* =========================HEADER SEARCH========================= */
 
 .header_middle .input_search {
+  width: 300px;
   height: 30px;
   padding: 0 5px;
   border-radius: 5px 0 0 5px;
@@ -114,7 +123,6 @@ a {
   border-radius: 0 5px 5px 0;
   border: 1px solid #ccc;
 }
-
 
 /* ======================HEADER BOTTOM====================== */
 
@@ -158,11 +166,6 @@ a {
 }
 
 /* ===================INDEX BLOCKS===================== */
-
-.container {
-  padding: 0 5%;
-  margin: 0 auto;
-}
 
 .index-blocks {
   max-width: 100%;
