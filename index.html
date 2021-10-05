@@ -7,105 +7,106 @@
     <title>Demo_1</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
-    /> -->
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="header_top">
-        <ul class="header_nav">
-          <li class="header_item">
-            <a href="" class="header_link">Доставка</a>
-          </li>
-          <li class="header_item">
-            <a href="" class="header_link">Оплата</a>
-          </li>
-          <li class="header_item">
-            <a href="" class="header_link">Отзывы</a>
-          </li>
-          <li class="header_item">
-            <a href="" class="header_link">Блог</a>
-          </li>
-          <li class="header_item">
-            <a href="" class="header_link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="container">
+      <header>
+        <nav class="header_top">
+          <ul class="header_nav">
+            <li class="header_item">
+              <a href="" class="header_link">Доставка</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link">Оплата</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link">Отзывы</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link">Блог</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="header_middle">
-        <div class="header_logo">
-          <a href="" class="logo">
-            <img src="./img/logo_new.png" alt="Coffee" class="header_img"
-          /></a>
+        <div class="header_middle">
+          <div class="header_logo">
+            <a href="" class="logo">
+              <img src="./img/logo_new.png" alt="Coffee" class="header_img"
+            /></a>
+          </div>
+          <div class="header-search">
+            <form>
+              <input
+                type="text"
+                class="input_search"
+                name="search"
+                placeholder="Найдется всё..."
+              />
+              <button class="btn" type="submit" name="search_btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <ul class="phones">
+            <li class="vodafone phone_icon">
+              <a href="tel:+380991234567">(099)1234567</a>
+            </li>
+            <li class="life phone_icon">
+              <a href="tel:+380631234567">(063)1234567</a>
+            </li>
+            <li class="kyivstar phone_icon">
+              <a href="tel:+380971234567">(097)1234567</a>
+            </li>
+          </ul>
         </div>
-        <div class="header-search">
-          <form>
-            <input
-              type="text"
-              class="input_search"
-              name="search"
-              placeholder="Найдется всё..."
-            />
-            <button class="btn" type="submit" name="search_btn">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
+        <div class="header_bottom">
+          <ul class="header_bottom-nav">
+            <li>
+              <a href="#" class="header_bottom-item"
+                ><span>Оборудование</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="header_bottom-item"
+                ><span>Кофе <i class="fas fa-caret-down"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="header_bottom-item"><span>Чай</span></a>
+            </li>
+            <li>
+              <a href="#" class="header_bottom-item"><span>Аксессуары</span></a>
+            </li>
+            <li>
+              <a href="#" class="header_bottom-item"><span>Аренда</span></a>
+            </li>
+            <li>
+              <a href="#" class="header_bottom-item"><span>Ремонт</span></a>
+            </li>
+            <li class="sales">
+              <a href="" class="header_bottom-item"><span>Распродажа</span></a>
+            </li>
+          </ul>
         </div>
-        <ul class="phones">
-          <li class="vodafone phone_icon">
-            <a href="tel:+380991234567">(099)1234567</a>
-          </li>
-          <li class="life phone_icon">
-            <a href="tel:+380631234567">(063)1234567</a>
-          </li>
-          <li class="kyivstar phone_icon">
-            <a href="tel:+380971234567">(097)1234567</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header_bottom">
-        <ul class="header_bottom-nav">
-          <li>
-            <a href="#" class="header_bottom-item"><span>Оборудование</span></a>
-          </li>
-          <li>
-            <a href="#" class="header_bottom-item"
-              ><span>Кофе <i class="fas fa-caret-down"></i></span
-            ></a>
-          </li>
-          <li>
-            <a href="#" class="header_bottom-item"><span>Чай</span></a>
-          </li>
-          <li>
-            <a href="#" class="header_bottom-item"><span>Аксессуары</span></a>
-          </li>
-          <li>
-            <a href="#" class="header_bottom-item"><span>Аренда</span></a>
-          </li>
-          <li>
-            <a href="#" class="header_bottom-item"><span>Ремонт</span></a>
-          </li>
-          <li class="sales">
-            <a href="" class="header_bottom-item"><span>Распродажа</span></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <div class="slider-holder">
-          
-        </div>
+      </header>
+      <main>
+        <!-- <div class="slider-holder"></div> -->
         <div class="index-blocks">
           <a href="#" class="index-block one"
             ><h2>Кофемашины</h2>
@@ -150,29 +151,29 @@
             <img src="./img/rent.jpg" alt="rent"
           /></a>
         </div>
-      </div>
-    </main>
-    <footer>
-      <nav class="footer">
-        <ul class="footer_nav">
-          <li class="footer_item">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="footer_item">
-            <a href="#">Оплата</a>
-          </li>
-          <li class="footer_item">
-            <a href="#">Отзывы</a>
-          </li>
-          <li class="footer_item">
-            <a href="#">Блог</a>
-          </li>
-          <li class="footer_item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
+      </main>
+      <footer>
+        <nav class="footer">
+          <ul class="footer_nav">
+            <li class="footer_item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="footer_item">
+              <a href="#">Оплата</a>
+            </li>
+            <li class="footer_item">
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="footer_item">
+              <a href="#">Блог</a>
+            </li>
+            <li class="footer_item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>
 

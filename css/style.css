@@ -3,28 +3,31 @@
 *::after {
   box-sizing: border-box;
   text-decoration: none;
+  margin: 0 auto;
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  
   font-size: 16px;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: #efefef;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 a {
   color: #505050;
+  text-decoration: none;
 }
 
-.header_top,
+/* .header_top,
 .header_middle,
 .container {
   padding: 0 5%;
   margin: 0 auto;
-}
+} */
 
 .header_top {
   display: flex;
