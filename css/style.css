@@ -186,6 +186,7 @@ a {
   flex-basis: 100%;
   position: relative;
   transition: 0.2s linear;
+  margin-bottom: 4px;
 }
 
 .index-blocks .index-block:hover {
