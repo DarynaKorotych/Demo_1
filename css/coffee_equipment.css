@@ -3,48 +3,41 @@
 *::after {
   box-sizing: border-box;
   text-decoration: none;
-  margin: 0 auto;
+  margin: 0;
 }
 
-/* html {
-  font-size: 16px;
-} */
-
-html, body {
+html,
+body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: #ffffff;
   margin: 0;
 }
 
-a {
+a,
+a:hover {
   color: #505050;
   text-decoration: none;
 }
 
-/* .container {
-  padding: 0 5%;
-  margin: 0 auto;
-} */
-
-.header_top {
+.header-top {
   display: flex;
   justify-content: center;
   padding: 2px 5%;
 }
-.logo{
-  display:inline-block;
+.logo {
+  display: inline-block;
   padding: 5px 0;
 }
 
 @media (max-width: 768px) {
-  .header_top,
+  .header-top,
   .header-search {
     display: none;
   }
 }
 
-.header_nav {
+.header-nav {
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -77,7 +70,7 @@ a {
   justify-content: space-between;
   align-items: center;
   /* padding-top: 20px;
-  padding-bottom: 20px; */
+    padding-bottom: 20px; */
   padding: 0 5%;
 }
 
@@ -92,7 +85,6 @@ a {
 .header_middle .call {
   position: relative;
 }
-
 
 .header_middle .phones {
   list-style: none;
@@ -134,121 +126,78 @@ a {
 
 /* ======================HEADER BOTTOM====================== */
 
-.header_bottom {
+.navbar {
   background: #e7e7e7;
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
   padding: 0 5%;
-  margin-bottom: 10px;
-  position: relative;
 }
 
-.header_bottom .header_bottom-nav {
+.nav-item {
+  display: inline-block;
+  position: relative;
+  border-left: 1px solid #c7c7c7;
+  padding: 5px 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #505050;
+}
+
+.nav-item:nth-last-child(-n + 1) {
+  background-color: rgba(251, 163, 80, 0.829);
+}
+
+.main-body {
+  padding: 0 5%;
+}
+
+.navbar-nav > li:hover > a + .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  left: -1px;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}
+
+.dropdown-item img {
+  width: 35px;
+}
+
+.dropdown:hover {
+  background-color: #d3d2d2d5;
+}
+
+.navbar-nav {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-.header_bottom .header_bottom-nav li {
-  border-left: 1px solid #c7c7c7;
-  position: relative;
-  display: inline-block;
+.navbar-brand {
+  display: none;
 }
 
-.header_bottom .header_bottom-nav li a {
-  /* color: #505050; */
-  display: block;
-  padding: 10px 9px;
+.navbar-toggler{
+  margin: 5px 0;
 }
 
-.header_bottom .header_bottom-nav li.sales {
-  background: rgb(233, 155, 100);
+@media (max-width: 992px) {
+  .navbar-brand {
+    display: block;
+  }
+  .navbar > .container-fluid {
+    justify-content: space-between;
+  }
 }
 
-.header_bottom-item:hover {
-  opacity: 0.85;
-}
-
-.fa-caret-down::before {
-  content: "\f0d7";
-}
-
-.main-body{
-padding: 0 5%;
-}
-
-/* ====================CAROUSEL=================== */
-
-.carousel-inner{
-  padding: 2px;
-}
-
-/* ===================INDEX BLOCKS===================== */
-
-.index-blocks {
-  max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
-}
-
-/* .item {
-  position: relative;
-  height: 100%;
-  padding: 10px;
-} */
-
-.index-blocks .index-block {
-  flex-basis: 100%;
-  position: relative;
-  transition: 0.2s linear;
-  margin-bottom: 4px;
-}
-
-.index-blocks .index-block:hover {
-  opacity: 0.6;
-}
-
-.index-blocks .index-block.one {
-  width: 100%;
-}
-
-.index-blocks .index-block.one img {
-  height: 250px;
-  object-fit: cover;
-}
-
-.index-blocks .index-block .two {
-  flex-basis: calc(50%-2px);
-}
-
-.index-blocks .index-block img {
-  height: 300px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.index-blocks .index-block.two {
-  flex-basis: calc(50% - 2px);
-}
-
-.index-blocks a {
-  position: relative;
-}
-
-.index-blocks .index-block h2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  margin: 0;
-  background: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  font-size: 24px;
-  color: #fff;
-  font-weight: normal;
+@media (max-width: 992px){
+  .nav-item{
+    border: none;
+  }
 }
 
 /* =================FOOTER================== */
